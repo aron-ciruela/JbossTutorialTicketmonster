@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ticketmonster: Assortment of technologies including Arquillian
 ========================
 Author: Pete Muir
@@ -96,3 +97,7 @@ If you want to debug the source code or look at the Javadocs of any library in t
 
     mvn dependency:sources
     mvn dependency:resolve -Dclassifier=javadoc
+=======
+# JbossTutorialTicketmonster
+A Redhat Jboss tutorial in JAVA EE stack(JPA, EJB, JSF, CDI)
+>>>>>>> 5ef1d30c35a92052e0740b1bb37a48ea891cd78d
