@@ -22,7 +22,7 @@ import javax.validation.constraints.Size;
  *
  */
 @Entity
-public class Event {
+public class Event<Booking> {
 
     /* Declaration of fields */
 

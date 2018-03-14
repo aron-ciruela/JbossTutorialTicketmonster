@@ -11,6 +11,8 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotNull;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 /**
  * <p>
  * Contains price categories - each category represents the price for a ticket in a particular section at a particular venue for
@@ -30,6 +32,7 @@ import javax.validation.constraints.NotNull;
 @SuppressWarnings("serial")
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = { "section_id", "show_id", "ticketcategory_id" }))
+@JsonIgnoreProperties("show")
 public class TicketPrice implements Serializable {
 
     /* Declaration of fields */
